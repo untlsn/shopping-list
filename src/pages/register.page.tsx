@@ -1,14 +1,14 @@
-import { usePageContext } from '~/renderer/pageContext';
+import useQueryString from '~/helpers/pageContextHelpers/useQueryString';
 
 export function Page() {
-  const { email } = usePageContext().urlParsed.search;
+  const search = useQueryString();
 
   return (
     <div class="pt-15">
       <h1>Register page</h1>
       <p>
         <span>Predefine email: </span>
-        {email}
+        {search.email}
       </p>
     </div>
   );

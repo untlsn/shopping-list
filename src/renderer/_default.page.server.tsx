@@ -5,7 +5,7 @@ import { App } from './App';
 import type { PageContext } from './types';
 
 // See https://vite-plugin-ssr.com/data-fetching
-export const passToClient = ['pageProps', 'documentProps', 'routeParams', 'urlParsed'];
+export const passToClient = ['pageProps', 'documentProps', 'routeParams'];
 
 export function render(pageContext: PageContext) {
   const { pipe } = renderToStream(() => <App route={() => pageContext} />);
