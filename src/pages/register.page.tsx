@@ -1,4 +1,4 @@
-import useQueryString from '~/helpers/pageContextHelpers/useQueryString';
+import { useQueryString } from '~/helpers/pageContextHelpers';
 
 export function Page() {
   const search = useQueryString();
