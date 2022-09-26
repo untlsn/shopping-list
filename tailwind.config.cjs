@@ -7,9 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        lime: '#00b289',
-        text: '#4c4d5f',
-        yellow: '#f8db62'
+        text: {
+          link: '#8CBAE9',
+        },
+        background: {
+          primary: '#353C4A',
+          input: '#3C4350',
+          secondary: '#434A59',
+          button: '#698989',
+        }
       },
     },
   },

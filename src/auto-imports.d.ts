@@ -41,6 +41,7 @@ declare global {
   const lazy: typeof import('solid-js')['lazy']
   const mapArray: typeof import('solid-js')['mapArray']
   const mergeProps: typeof import('solid-js')['mergeProps']
+  const navigate: typeof import('vite-plugin-ssr/client/router')['navigate']
   const normalizeIntegration: typeof import('@solidjs/router')['normalizeIntegration']
   const observable: typeof import('solid-js')['observable']
   const on: typeof import('solid-js')['on']

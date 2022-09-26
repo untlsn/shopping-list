@@ -12,7 +12,7 @@ import * as path from 'path';
 import { theme } from './tailwind.config.cjs';
 
 const shortcuts: [string, string][] = [
-
+  ['animate-underline', 'relative hover:before:scale-x-100 before:(content-empty bg-white h-px w-full absolute bottom-0 left-0 scale-x-0 origin-left transition-transform)'],
 ];
 
 const config = defineConfig({
@@ -71,7 +71,7 @@ const config = defineConfig({
     presetWind(),
     presetWebFonts({
       fonts: {
-        sans: 'Roboto',
+        sans: 'Exo 2:300,400',
       },
     }),
     presetIcons({

@@ -27,6 +27,7 @@ export default defineConfig({
       imports: [
         'solid-js',
         {
+          'vite-plugin-ssr/client/router': ['navigate'],
           clsx: ['clsx'],
           '@solidjs/router': ['Link', 'NavLink', 'Navigate', 'Outlet', 'Route', 'Router', 'Routes', '_mergeSearchString', 'createIntegration', 'hashIntegration', 'normalizeIntegration', 'pathIntegration', 'staticIntegration', 'useHref', 'useIsRouting', 'useLocation', 'useMatch', 'useNavigate', 'useParams', 'useResolvedPath', 'useRouteData', 'useRoutes', 'useSearchParams'],
         },
