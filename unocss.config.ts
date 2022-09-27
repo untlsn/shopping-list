@@ -13,6 +13,7 @@ import { theme } from './tailwind.config.cjs';
 
 const shortcuts: [string, string][] = [
   ['animate-underline', 'relative hover:before:scale-x-100 before:(content-empty bg-white h-px w-full absolute bottom-0 left-0 scale-x-0 origin-left transition-transform)'],
+  ['shadow-button', 'inline-block text-center bg-background-button py-2 w-full rounded-lg shadow-bottom'],
 ];
 
 const config = defineConfig({
@@ -22,6 +23,7 @@ const config = defineConfig({
     ...theme.extend,
   },
   rules: [
+    ['shadow-bottom', { 'box-shadow': '0 4px 2px 0 #638181CC' }],
     ['content-fill', { content: '"_"' }],
     [/^((min|max)-)?size-(\d+)(.+)?$/, ([matcher]) => {
       const [type, sizePart] = matcher.split('size-');

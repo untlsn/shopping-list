@@ -5,18 +5,18 @@ function Header() {
         <a href="/">Ostoksilla</a>
       </h1>
       <div class="flex gap-4 font-bold">
-        <button
-          type="button"
+        <a
+          href="/register"
           class="animate-underline"
         >
           Zarejestruj się
-        </button>
-        <button
-          type="button"
+        </a>
+        <a
+          href="/login"
           class="animate-underline"
         >
           Zaloguj się
-        </button>
+        </a>
       </div>
     </header>
   );

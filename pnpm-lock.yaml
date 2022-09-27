@@ -26,6 +26,7 @@ specifiers:
   vite: ^3.0.9
   vite-plugin-solid: ^2.3.0
   vite-plugin-ssr: ^0.4.38
+  zod: ^3.19.1
 
 dependencies:
   '@solidjs/meta': 0.28.0_solid-js@1.5.1
@@ -37,6 +38,7 @@ dependencies:
   unocss: 0.44.7_vite@3.0.9
   unplugin-auto-import: 0.9.5_vite@3.0.9
   vite-plugin-ssr: 0.4.38_vite@3.0.9
+  zod: 3.19.1
 
 devDependencies:
   '@types/node': 18.7.13
@@ -3322,4 +3324,8 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: false
+
+  /zod/3.19.1:
+    resolution: {integrity: sha512-LYjZsEDhCdYET9ikFu6dVPGp2YH9DegXjdJToSzD9rO6fy4qiRYFoyEYwps88OseJlPyl2NOe2iJuhEhL7IpEA==}
     dev: false

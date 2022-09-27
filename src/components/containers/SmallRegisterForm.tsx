@@ -1,4 +1,4 @@
-import TestField from '~/components/containers/TestField';
+import TextField from '~/components/containers/TextField';
 
 function SmallRegisterForm() {
   const [email, setEmail] = createSignal('');
@@ -16,13 +16,10 @@ function SmallRegisterForm() {
     >
       <h1 class="text-2.5rem">Skorzystaj już teraz!</h1>
       <p class="font-light pb-4">Wystarczy tylko email:</p>
-      <TestField label="Email" onChange={setEmail} />
+      <TextField label="Email" onChange={setEmail} />
       <button
         type="submit"
-        style={{
-          'box-shadow': '0 4px 2px 0 #638181CC',
-        }}
-        class="inline-block text-center bg-background-button py-2 w-full rounded-lg"
+        class="shadow-button"
       >
         Zarejestruj się
       </button>
